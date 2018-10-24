@@ -821,7 +821,7 @@ class Entry {
 			// perception
 			"(?<!xg>)(Insightful)", "(?<!xg>)(Aware)", "(?<!xg>)(Intuitive)",
 			"(?<!xg>)(Distract)(\\b|ed|s|ing)", "(?<!xg>)(Disorient)(\\b|ed)", "(?<!xg>)(Blind[^)])(\\b|ed|s|ing|ness)",
-			
+
 			
 			// DE_patch
 			// Verfassung
@@ -1023,57 +1023,77 @@ class Entry {
 			
 			// 感知
 			"(?<!xg>)(敏锐)", "(?<!xg>)(机敏)", "(?<!xg>)(直觉超群)",
-			"(?<!xg>)(烦乱)(\\b)", "(?<!xg>)(迷离)(\\b)", "(?<!xg>)(目盲)(\\b)"
+			"(?<!xg>)(烦乱)(\\b)", "(?<!xg>)(迷离)(\\b)", "(?<!xg>)(目盲)(\\b)",
+
+			// KO
+			// constitution
+			"(?<!xg>)(건강함)", "(?<!xg>)(강인함)", "(?<!xg>)(강건함)",
+			"(?<!xg>)(구역질 상태)()", "(?<!xg>)(약화 상태)()", "(?<!xg>)(쇠약 상태)()",
+			// resolve
+			"(?<!xg>)(확고함)", "(?<!xg>)(단호함)", "(?<!xg>)(용감함)",
+			"(?<!xg>)(동요 상태)()", "(?<!xg>)(경악 상태)()", "(?<!xg>)(공포 상태)()",
+			// dexterity
+			"(?<!xg>)(기민함)", "(?<!xg>)(날렵함)", "(?<!xg>)(신속함)",
+			"(?<!xg>)(저는 상태)()", "(?<!xg>)(이동 불가 상태)()", "(?<!xg>)(마비 상태)()",
+			// intellect
+			"(?<!xg>)(영리함)", "(?<!xg>)(예리함)", "(?<!xg>)(명석함)",
+			"(?<!xg>)(혼란 상태)()", "(?<!xg>)(매혹 상태)()", "(?<!xg>)(지배 상태)()",
+			// might
+			"(?<!xg>)(강력함)", "(?<!xg>)(집요함)", "(?<!xg>)(활력)",
+			"(?<!xg>)(비틀)(거림 상태|거리게)", "(?<!xg>)(혼미 상태)()", "(?<!xg>)(기절 상태)()",
+			// perception
+			"(?<!xg>)(통찰력)", "(?<!xg>)(인식력)", "(?<!xg>)(직관력)",
+			"(?<!xg>)(산만)(한 상태|하게)", "(?<!xg>)(방향 감각 혼란)(\\b| 상태)", "(?<!xg>)(실명 상태)()",
 	}; 
 	 
 	final static String[] targetWords = new String[] {
-		"<link=\"gamedata://2370256c-67fe-4481-bfae-9081b2dc10d3\"><#f7b733>$1 <sprite=\"Inline\" name=\"attribute_constitution\" tint=1>¹</color></link>",
-		"<link=\"gamedata://fd4d0c5c-f525-4010-99dc-f30a59b2f729\"><#f7b733>$1 <sprite=\"Inline\" name=\"attribute_constitution\" tint=1>²</color></link>",
-		"<link=\"gamedata://86f9c246-c37c-46a6-8838-7dc36c18e08d\"><#f7b733>$1 <sprite=\"Inline\" name=\"attribute_constitution\" tint=1>³</color></link>",
+		"<link=\"gamedata://2370256c-67fe-4481-bfae-9081b2dc10d3\"><#f7b733>$1<space=0.7em><sprite=\"Inline\" name=\"attribute_constitution\" tint=1><space=0.3em><voffset=0.55em><size=80%><b>1</b></size></voffset></color></link>",
+		"<link=\"gamedata://fd4d0c5c-f525-4010-99dc-f30a59b2f729\"><#f7b733>$1<space=0.7em><sprite=\"Inline\" name=\"attribute_constitution\" tint=1><space=0.3em><voffset=0.55em><size=80%><b>2</b></size></voffset></color></link>",
+		"<link=\"gamedata://86f9c246-c37c-46a6-8838-7dc36c18e08d\"><#f7b733>$1<space=0.7em><sprite=\"Inline\" name=\"attribute_constitution\" tint=1><space=0.3em><voffset=0.55em><size=80%><b>3</b></size></voffset></color></link>",
 		                                                                                                                                                                                                                                                                                                                           
-		"<link=\"gamedata://1e99c141-5288-4bf0-abc2-65cc78638745\"><#f7b733>$1$2 <sprite=\"Inline\" name=\"attribute_constitution\" tint=1>₁</color></link>",
-		"<link=\"gamedata://a6368675-47ed-460d-be4f-2593f24ad126\"><#f7b733>$1$2 <sprite=\"Inline\" name=\"attribute_constitution\" tint=1>₂</color></link>",
-		"<link=\"gamedata://fe0997e7-422f-4d1d-b9f6-241946fbd1f1\"><#f7b733>$1$2 <sprite=\"Inline\" name=\"attribute_constitution\" tint=1>₃</color></link>",
+		"<link=\"gamedata://1e99c141-5288-4bf0-abc2-65cc78638745\"><#f7b733>$1$2<space=0.7em><sprite=\"Inline\" name=\"attribute_constitution\" tint=1><space=0.3em><voffset=-0.35em><size=80%><b>1</b></size></voffset></color></link>",
+		"<link=\"gamedata://a6368675-47ed-460d-be4f-2593f24ad126\"><#f7b733>$1$2<space=0.7em><sprite=\"Inline\" name=\"attribute_constitution\" tint=1><space=0.3em><voffset=-0.35em><size=80%><b>2</b></size></voffset></color></link>",
+		"<link=\"gamedata://fe0997e7-422f-4d1d-b9f6-241946fbd1f1\"><#f7b733>$1$2<space=0.7em><sprite=\"Inline\" name=\"attribute_constitution\" tint=1><space=0.3em><voffset=-0.35em><size=80%><b>3</b></size></voffset></color></link>",
 		                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
-		"<link=\"gamedata://92d1a280-2f8e-4a6d-87a9-6599d41d65e4\"><#30d3d5>$1 <sprite=\"Inline\" name=\"attribute_resolve\" tint=1>¹</color></link>",
-		"<link=\"gamedata://51e1cbfc-506b-4e7c-880e-b89312a4b4c3\"><#30d3d5>$1 <sprite=\"Inline\" name=\"attribute_resolve\" tint=1>²</color></link>",     
-		"<link=\"gamedata://dc62af47-239f-4ee4-8d91-a5e8b3b97564\"><#30d3d5>$1 <sprite=\"Inline\" name=\"attribute_resolve\" tint=1>³</color></link>",     
+		"<link=\"gamedata://92d1a280-2f8e-4a6d-87a9-6599d41d65e4\"><#30d3d5>$1<space=0.7em><sprite=\"Inline\" name=\"attribute_resolve\" tint=1><space=0.3em><voffset=0.55em><size=80%><b>1</b></size></voffset></color></link>",
+		"<link=\"gamedata://51e1cbfc-506b-4e7c-880e-b89312a4b4c3\"><#30d3d5>$1<space=0.7em><sprite=\"Inline\" name=\"attribute_resolve\" tint=1><space=0.3em><voffset=0.55em><size=80%><b>2</b></size></voffset></color></link>",
+		"<link=\"gamedata://dc62af47-239f-4ee4-8d91-a5e8b3b97564\"><#30d3d5>$1<space=0.7em><sprite=\"Inline\" name=\"attribute_resolve\" tint=1><space=0.3em><voffset=0.55em><size=80%><b>3</b></size></voffset></color></link>",
 		                                                                                                                                                                                                                                                                                                                                      
-		"<link=\"gamedata://8f4832b6-49ef-4f40-9d64-20eb50fd9bb6\"><#30d3d5>$1$2 <sprite=\"Inline\" name=\"attribute_resolve\" tint=1>₁</color></link>",   
-		"<link=\"gamedata://d9e00789-14d3-46f1-be3e-4c1379148d24\"><#30d3d5>$1$2 <sprite=\"Inline\" name=\"attribute_resolve\" tint=1>₂</color></link>",  
-		"<link=\"gamedata://0d89a32d-c883-4a18-9fbd-4ff58f1fd0de\"><#30d3d5>$1$2 <sprite=\"Inline\" name=\"attribute_resolve\" tint=1>₃</color></link>",  
+		"<link=\"gamedata://8f4832b6-49ef-4f40-9d64-20eb50fd9bb6\"><#30d3d5>$1$2<space=0.7em><sprite=\"Inline\" name=\"attribute_resolve\" tint=1><space=0.3em><voffset=-0.35em><size=80%><b>1</b></size></voffset></color></link>",
+		"<link=\"gamedata://d9e00789-14d3-46f1-be3e-4c1379148d24\"><#30d3d5>$1$2<space=0.7em><sprite=\"Inline\" name=\"attribute_resolve\" tint=1><space=0.3em><voffset=-0.35em><size=80%><b>2</b></size></voffset></color></link>",
+		"<link=\"gamedata://0d89a32d-c883-4a18-9fbd-4ff58f1fd0de\"><#30d3d5>$1$2<space=0.7em><sprite=\"Inline\" name=\"attribute_resolve\" tint=1><space=0.3em><voffset=-0.35em><size=80%><b>3</b></size></voffset></color></link>",
 	                                                                                                                                                                    
-		"<link=\"gamedata://a0b4a490-2c99-456e-b6fb-131353133fba\"><#72da26>$1 <sprite=\"Inline\" name=\"attribute_dexterity\" tint=1>¹</color></link>",  
-		"<link=\"gamedata://0451672b-af45-4b44-96b4-ff2c1b6aa1d3\"><#72da26>$1 <sprite=\"Inline\" name=\"attribute_dexterity\" tint=1>²</color></link>",  
-		"<link=\"gamedata://1418c0ae-790d-4aef-9ca6-00238012c84e\"><#72da26>$1 <sprite=\"Inline\" name=\"attribute_dexterity\" tint=1>³</color></link>",  
+		"<link=\"gamedata://a0b4a490-2c99-456e-b6fb-131353133fba\"><#72da26>$1<space=0.7em><sprite=\"Inline\" name=\"attribute_dexterity\" tint=1><space=0.3em><voffset=0.55em><size=80%><b>1</b></size></voffset></color></link>",
+		"<link=\"gamedata://0451672b-af45-4b44-96b4-ff2c1b6aa1d3\"><#72da26>$1<space=0.7em><sprite=\"Inline\" name=\"attribute_dexterity\" tint=1><space=0.3em><voffset=0.55em><size=80%><b>2</b></size></voffset></color></link>",
+		"<link=\"gamedata://1418c0ae-790d-4aef-9ca6-00238012c84e\"><#72da26>$1<space=0.7em><sprite=\"Inline\" name=\"attribute_dexterity\" tint=1><space=0.3em><voffset=0.55em><size=80%><b>3</b></size></voffset></color></link>",
 		                                                                                                                                                                                                                                                                                                                                                
-		"<link=\"gamedata://c1d82f88-4f54-4279-8e72-43104bf754a2\"><#72da26>$1$2 <sprite=\"Inline\" name=\"attribute_dexterity\" tint=1>₁</color></link>",
-		"<link=\"gamedata://a31fdd6c-5f4f-404d-92f5-5d7d8c166f2c\"><#72da26>$1$2 <sprite=\"Inline\" name=\"attribute_dexterity\" tint=1>₂</color></link>",
-		"<link=\"gamedata://72de641d-d2f1-47ca-85f2-6ec3e41140bd\"><#72da26>$1$2 <sprite=\"Inline\" name=\"attribute_dexterity\" tint=1>₃</color></link>",
+		"<link=\"gamedata://c1d82f88-4f54-4279-8e72-43104bf754a2\"><#72da26>$1$2<space=0.7em><sprite=\"Inline\" name=\"attribute_dexterity\" tint=1><space=0.3em><voffset=-0.35em><size=80%><b>1</b></size></voffset></color></link>",
+		"<link=\"gamedata://a31fdd6c-5f4f-404d-92f5-5d7d8c166f2c\"><#72da26>$1$2<space=0.7em><sprite=\"Inline\" name=\"attribute_dexterity\" tint=1><space=0.3em><voffset=-0.35em><size=80%><b>2</b></size></voffset></color></link>",
+		"<link=\"gamedata://72de641d-d2f1-47ca-85f2-6ec3e41140bd\"><#72da26>$1$2<space=0.7em><sprite=\"Inline\" name=\"attribute_dexterity\" tint=1><space=0.3em><voffset=-0.35em><size=80%><b>3</b></size></voffset></color></link>",
 		                                                                                                                                                                                                                                                                                                                                                                      
-		"<link=\"gamedata://0435c12c-8049-4f50-b234-ed3cca340696\"><#00a4ff>$1 <sprite=\"Inline\" name=\"attribute_intellect\" tint=1>¹</color></link>", 
-		"<link=\"gamedata://c4ada862-ee17-4c10-8967-734e08daa4aa\"><#00a4ff>$1 <sprite=\"Inline\" name=\"attribute_intellect\" tint=1>²</color></link>",  
-		"<link=\"gamedata://dee61b5a-6313-4406-ab83-4fb72b37cea2\"><#00a4ff>$1 <sprite=\"Inline\" name=\"attribute_intellect\" tint=1>³</color></link>",  
+		"<link=\"gamedata://0435c12c-8049-4f50-b234-ed3cca340696\"><#00a4ff>$1<space=0.7em><sprite=\"Inline\" name=\"attribute_intellect\" tint=1><space=0.3em><voffset=0.55em><size=80%><b>1</b></size></voffset></color></link>",
+		"<link=\"gamedata://c4ada862-ee17-4c10-8967-734e08daa4aa\"><#00a4ff>$1<space=0.7em><sprite=\"Inline\" name=\"attribute_intellect\" tint=1><space=0.3em><voffset=0.55em><size=80%><b>2</b></size></voffset></color></link>",
+		"<link=\"gamedata://dee61b5a-6313-4406-ab83-4fb72b37cea2\"><#00a4ff>$1<space=0.7em><sprite=\"Inline\" name=\"attribute_intellect\" tint=1><space=0.3em><voffset=0.55em><size=80%><b>3</b></size></voffset></color></link>",
 		                                                                                                                                                                                                                                                                                                                                                         
-		"<link=\"gamedata://917ea7e5-133c-4163-93c6-55c7d55420a4\"><#00a4ff>$1$2 <sprite=\"Inline\" name=\"attribute_intellect\" tint=1>₁</color></link>",
-		"<link=\"gamedata://f4a09726-a62d-49a2-8cc6-c3713676c833\"><#00a4ff>$1$2 <sprite=\"Inline\" name=\"attribute_intellect\" tint=1>₂</color></link>",
-		"<link=\"gamedata://9e773415-4d95-4be6-ab87-325d9815e0d7\"><#00a4ff>$1$2 <sprite=\"Inline\" name=\"attribute_intellect\" tint=1>₃</color></link>",
+		"<link=\"gamedata://917ea7e5-133c-4163-93c6-55c7d55420a4\"><#00a4ff>$1$2<space=0.7em><sprite=\"Inline\" name=\"attribute_intellect\" tint=1><space=0.3em><voffset=-0.35em><size=80%><b>1</b></size></voffset></color></link>",
+		"<link=\"gamedata://f4a09726-a62d-49a2-8cc6-c3713676c833\"><#00a4ff>$1$2<space=0.7em><sprite=\"Inline\" name=\"attribute_intellect\" tint=1><space=0.3em><voffset=-0.35em><size=80%><b>2</b></size></voffset></color></link>",
+		"<link=\"gamedata://9e773415-4d95-4be6-ab87-325d9815e0d7\"><#00a4ff>$1$2<space=0.7em><sprite=\"Inline\" name=\"attribute_intellect\" tint=1><space=0.3em><voffset=-0.35em><size=80%><b>3</b></size></voffset></color></link>",
 	                                                                                                                                                                            
-		"<link=\"gamedata://79b41b80-d3c4-4176-a44b-69490efa41a8\"><#ff4800>$1 <sprite=\"Inline\" name=\"attribute_might\" tint=1>¹</color></link>",      
-		"<link=\"gamedata://93eb382a-dc8e-469b-a116-4686c73e1eb5\"><#ff4800>$1 <sprite=\"Inline\" name=\"attribute_might\" tint=1>²</color></link>",      
-		"<link=\"gamedata://c56f70b5-b611-4dee-b80f-335033b98e2f\"><#ff4800>$1 <sprite=\"Inline\" name=\"attribute_might\" tint=1>³</color></link>",      
+		"<link=\"gamedata://79b41b80-d3c4-4176-a44b-69490efa41a8\"><#ff4800>$1<space=0.7em><sprite=\"Inline\" name=\"attribute_might\" tint=1><space=0.3em><voffset=0.55em><size=80%><b>1</b></size></voffset></color></link>",
+		"<link=\"gamedata://93eb382a-dc8e-469b-a116-4686c73e1eb5\"><#ff4800>$1<space=0.7em><sprite=\"Inline\" name=\"attribute_might\" tint=1><space=0.3em><voffset=0.55em><size=80%><b>2</b></size></voffset></color></link>",
+		"<link=\"gamedata://c56f70b5-b611-4dee-b80f-335033b98e2f\"><#ff4800>$1<space=0.7em><sprite=\"Inline\" name=\"attribute_might\" tint=1><space=0.3em><voffset=0.55em><size=80%><b>3</b></size></voffset></color></link>",
 	                                                                                                                                                                
-		"<link=\"gamedata://67f6a58b-658e-4c97-b0a2-5d53067dcbd8\"><#ff4800>$1$2 <sprite=\"Inline\" name=\"attribute_might\" tint=1>₁</color></link>",    
-		"<link=\"gamedata://3a790bc4-40a9-4d9f-8da8-a76f3cb6c5e1\"><#ff4800>$1$2 <sprite=\"Inline\" name=\"attribute_might\" tint=1>₂</color></link>",    
-		"<link=\"gamedata://fc2d1039-c512-484a-81e8-a843ba03df4e\"><#ff4800>$1$2 <sprite=\"Inline\" name=\"attribute_might\" tint=1>₃</color></link>",    
+		"<link=\"gamedata://67f6a58b-658e-4c97-b0a2-5d53067dcbd8\"><#ff4800>$1$2<space=0.7em><sprite=\"Inline\" name=\"attribute_might\" tint=1><space=0.3em><voffset=-0.35em><size=80%><b>1</b></size></voffset></color></link>",
+		"<link=\"gamedata://3a790bc4-40a9-4d9f-8da8-a76f3cb6c5e1\"><#ff4800>$1$2<space=0.7em><sprite=\"Inline\" name=\"attribute_might\" tint=1><space=0.3em><voffset=-0.35em><size=80%><b>2</b></size></voffset></color></link>",
+		"<link=\"gamedata://fc2d1039-c512-484a-81e8-a843ba03df4e\"><#ff4800>$1$2<space=0.7em><sprite=\"Inline\" name=\"attribute_might\" tint=1><space=0.3em><voffset=-0.35em><size=80%><b>3</b></size></voffset></color></link>",
 		                                                                                                                                                                                                                                                                                                                                                                        
-		"<link=\"gamedata://412f8f5e-d257-4c52-ac66-0e49fd603ef2\"><#ca58ff>$1 <sprite=\"Inline\" name=\"attribute_perception\" tint=1>¹</color></link>", 
-		"<link=\"gamedata://a64e1484-5867-4112-843c-06da3be5399b\"><#ca58ff>$1 <sprite=\"Inline\" name=\"attribute_perception\" tint=1>²</color></link>", 
-		"<link=\"gamedata://c2fb23c5-9907-4654-b62e-77adbc37c9bc\"><#ca58ff>$1 <sprite=\"Inline\" name=\"attribute_perception\" tint=1>³</color></link>", 
+		"<link=\"gamedata://412f8f5e-d257-4c52-ac66-0e49fd603ef2\"><#ca58ff>$1<space=0.7em><sprite=\"Inline\" name=\"attribute_perception\" tint=1><space=0.3em><voffset=0.55em><size=80%><b>1</b></size></voffset></color></link>",
+		"<link=\"gamedata://a64e1484-5867-4112-843c-06da3be5399b\"><#ca58ff>$1<space=0.7em><sprite=\"Inline\" name=\"attribute_perception\" tint=1><space=0.3em><voffset=0.55em><size=80%><b>2</b></size></voffset></color></link>",
+		"<link=\"gamedata://c2fb23c5-9907-4654-b62e-77adbc37c9bc\"><#ca58ff>$1<space=0.7em><sprite=\"Inline\" name=\"attribute_perception\" tint=1><space=0.3em><voffset=0.55em><size=80%><b>3</b></size></voffset></color></link>",
 		                                                                                                                                                                                                                                                                                                                                                          
-		"<link=\"gamedata://919bddc8-1e05-412b-bb5c-8272545b28f0\"><#ca58ff>$1$2 <sprite=\"Inline\" name=\"attribute_perception\" tint=1>₁</color></link>",
-		"<link=\"gamedata://1021cac0-2d10-4f0d-93e3-e1b0ce24f9fd\"><#ca58ff>$1$2 <sprite=\"Inline\" name=\"attribute_perception\" tint=1>₂</color></link>",
-		"<link=\"gamedata://76a5e15a-e75c-4853-889b-2e9229d46444\"><#ca58ff>$1$2 <sprite=\"Inline\" name=\"attribute_perception\" tint=1>₃</color></link>"
+		"<link=\"gamedata://919bddc8-1e05-412b-bb5c-8272545b28f0\"><#ca58ff>$1$2<space=0.7em><sprite=\"Inline\" name=\"attribute_perception\" tint=1><space=0.3em><voffset=-0.35em><size=80%><b>1</b></size></voffset></color></link>",
+		"<link=\"gamedata://1021cac0-2d10-4f0d-93e3-e1b0ce24f9fd\"><#ca58ff>$1$2<space=0.7em><sprite=\"Inline\" name=\"attribute_perception\" tint=1><space=0.3em><voffset=-0.35em><size=80%><b>2</b></size></voffset></color></link>",
+		"<link=\"gamedata://76a5e15a-e75c-4853-889b-2e9229d46444\"><#ca58ff>$1$2<space=0.7em><sprite=\"Inline\" name=\"attribute_perception\" tint=1><space=0.3em><voffset=-0.35em><size=80%><b>3</b></size></voffset></color></link>"
 	};
 	
 
@@ -1112,6 +1132,9 @@ class Entry {
 			case "zh":
 				i = 36 * 8;
 				break;
+			case "ko":
+				i = 36 * 9;
+				break;
 		}
 		
 		for(int j = 0; j < 36; j++) {
@@ -1147,6 +1170,16 @@ class Entry {
 			"(?<!xg>)(Direkt-?|direkte[rn] )([sS]chaden)",
 			"(?<!xg>)(Hieb-?)(schaden|\\b)",
 			"(?<!xg>)(Schock-?)(schaden|\\b)",
+
+            // KO
+            "(?<!xg>)(소각)(\\b)",
+            "(?<!xg>)(부식)(\\b)",
+            "(?<!xg>)(부수기)(\\b)",
+            "(?<!xg>)(동결)(\\b)",
+            "(?<!xg>)((?<=[^장막]\\s)관통)(\\b)",
+            "(?<!xg>)(고정)(\\b)",
+            "(?<!xg>)(베기)(\\b)",
+            "(?<!xg>)(충격)(\\b)",
 	};
 	
 	
@@ -1157,14 +1190,14 @@ class Entry {
 		result.FemaleText = FemaleText;
 		
 		String[] targetWords = new String[] {
-			"<sprite=\"Inline\" name=\"cs_burn\" tint=1> $1$2",
-			"<sprite=\"Inline\" name=\"cs_corrosive\" tint=1> $1$2",
-			"<sprite=\"Inline\" name=\"cs_blunt\" tint=1> $1$2",
-			"<sprite=\"Inline\" name=\"cs_freeze\" tint=1> $1$2",
-			"<sprite=\"Inline\" name=\"cs_pierce\" tint=1> $1$2",
-			"<sprite=\"Inline\" name=\"cs_raw\" tint=1> $1$2",
-			"<sprite=\"Inline\" name=\"cs_slash\" tint=1> $1$2",
-			"<sprite=\"Inline\" name=\"cs_shock\" tint=1> $1$2",
+			"<link=\"glossary://GlossaryEntry_Burning><b>$1$2</b><space=0.7em><sprite=\"Inline\" name=\"cs_burn\" tint=1></link>",
+			"<link=\"glossary://GlossaryEntry_Corrode><b>$1$2</b><space=0.7em><sprite=\"Inline\" name=\"cs_corrosive\" tint=1></link>",
+			"<link=\"glossary://GlossaryEntry_Crushing><b>$1$2</b><space=0.7em><sprite=\"Inline\" name=\"cs_blunt\" tint=1></link>",
+			"<link=\"glossary://GlossaryEntry_Freezing><b>$1$2</b><space=0.7em><sprite=\"Inline\" name=\"cs_freeze\" tint=1></link>",
+			"<link=\"glossary://GlossaryEntry_Piercing><b>$1$2</b><space=0.7em><sprite=\"Inline\" name=\"cs_pierce\" tint=1></link>",
+			"<link=\"glossary://GlossaryEntry_Raw><b>$1$2</b><space=0.7em><sprite=\"Inline\" name=\"cs_raw\" tint=1></link>",
+			"<link=\"glossary://GlossaryEntry_Slashing><b>$1$2</b><space=0.7em><sprite=\"Inline\" name=\"cs_slash\" tint=1></link>",
+			"<link=\"glossary://GlossaryEntry_Shock><b>$1$2</b><space=0.7em><sprite=\"Inline\" name=\"cs_shock\" tint=1></link>",
 		};
 		
 		int i = 0;
@@ -1196,6 +1229,10 @@ class Entry {
 			case "zh":
 		//		i = 8 * 8;
 				break;
+            case "ko":
+                // TODO : need to be replaced i = 8 * 9 when other language implemented
+                i = 8 * 2;
+                break;
 		}
 		
 		for(int j = 0; j < 8; j++) {
@@ -1226,6 +1263,14 @@ class Entry {
 			"(?<!xg>)(Willen?)\\b",
 			"(?<!xg>)(Durchschlag|Durchschlagskraft)",
 			"(?<!xg>)(RW|Rüstungswert)",
+
+            // KO
+            "(?<!xg>)(인내)",
+            "(?<!xg>)(회피)",
+            "(?<!xg>)(반사 신경)",
+            "(?<!xg>)(의지)",
+            "(?<!xg>)(관통력)",
+            "(?<!xg>)(갑옷 등급)",
 	};
 	
 	public Entry replaceDefenseWithIcon(String targetLanguage) {
@@ -1235,12 +1280,12 @@ class Entry {
 		result.FemaleText = FemaleText;
 		
 		String[] targetWords = new String[] {
-			"<#f9d968><sprite=\"Inline\" name=\"cs_fortitude\" tint=1> $1</color>",
-			"<#b0cffd><sprite=\"Inline\" name=\"cs_deflection\" tint=1> $1</color>",
-			"<#8bf7c3><sprite=\"Inline\" name=\"cs_reflex\" tint=1> $1</color>",
-			"<#d591f8><sprite=\"Inline\" name=\"cs_will\" tint=1> $1</color>",
-			"<sprite=\"Inline\" name=\"cs_penetration\" tint=1> $1",
-			"<sprite=\"Inline\" name=\"cs_ar\" tint=1> $1",
+			"<link=\"glossary://GlossaryEntry_Fortitude\"><b>$1</b><space=0.7em><#f9d968><sprite=\"Inline\" name=\"cs_fortitude\" tint=1></color></link>",
+			"<link=\"glossary://GlossaryEntry_Deflection\"><b>$1</b><space=0.7em><#b0cffd><sprite=\"Inline\" name=\"cs_deflection\" tint=1></color></link>",
+			"<link=\"glossary://GlossaryEntry_Reflexes\"><b>$1</b><space=0.7em><#8bf7c3><sprite=\"Inline\" name=\"cs_reflex\" tint=1></color></link>",
+			"<link=\"glossary://GlossaryEntry_Will\"><b>$1</b><space=0.7em><#d591f8><sprite=\"Inline\" name=\"cs_will\" tint=1></color></link>",
+			"<link=\"glossary://GlossaryEntry_Penetration\"><b>$1</b><space=0.7em><sprite=\"Inline\" name=\"cs_penetration\" tint=1>",
+			"<link=\"glossary://GlossaryEntry_Armor_Rating\"><b>$1</b><space=0.7em><sprite=\"Inline\" name=\"cs_ar\" tint=1>",
 		};
 		
 		int i = 0;
@@ -1272,6 +1317,9 @@ class Entry {
 			case "zh":
 		//		i = 6 * 8;
 				break;
+            case "ko":
+                i = 6 * 2;
+                break;
 		}
 		
 		for(int j = 0; j < 6; j++) {
